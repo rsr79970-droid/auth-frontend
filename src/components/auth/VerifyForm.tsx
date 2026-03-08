@@ -15,7 +15,7 @@ type FormData = {
   code: string;
 };
 
-export default function VerifyForm() {
+export function VerifyForm() {
   const router = useRouter();
   const params = useSearchParams();
 
