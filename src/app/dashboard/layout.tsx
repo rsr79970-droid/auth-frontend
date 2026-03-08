@@ -10,10 +10,10 @@ export default function DashboardLayout({
     <div className="flex min-h-screen">
       <Sidebar />
 
-      <div className="flex-1 p-10 space-y-6">
+      <div className="flex-1 flex flex-col pt-5">
         <DashboardHeader />
 
-        {children}
+        <main className="p-6 flex-1">{children}</main>
       </div>
     </div>
   );

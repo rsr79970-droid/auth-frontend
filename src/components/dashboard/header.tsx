@@ -52,7 +52,7 @@ export default function DashboardHeader() {
   };
 
   return (
-    <header className="flex items-center justify-between border-b pb-4">
+    <header className="flex items-center justify-between border-b pb-4 px-5">
       <h1 className="text-xl md:text-2xl font-semibold">Dashboard</h1>
 
       <DropdownMenu>
@@ -87,7 +87,9 @@ export default function DashboardHeader() {
 
           <DropdownMenuSeparator />
 
-          <DropdownMenuItem onClick={handleLogout}>Logout</DropdownMenuItem>
+          <DropdownMenuItem onClick={handleLogout} variant="destructive">
+            Logout
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </header>
